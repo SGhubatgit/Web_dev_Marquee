@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amazon Clone</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#e3e6e6;
+    }
+
+    /* NAVBAR */
+
+    .navbar{
+      height:60px;
+      background:#131921;
+      color:white;
+      display:flex;
+      align-items:center;
+      justify-content:space-evenly;
+    }
+
+    .logo img{
+      width:120px;
+      height:50px;
+      display:flex;
+      align-items:center;
+      font-size:28px;
+      font-weight:bold;
+      color:#ff9900;
+    }
+
+    .nav-location{
+      font-size:14px;
+    }
+
+    .nav-search{
+      display:flex;
+      width:50%;
+      height:40px;
+    }
+
+    .nav-search select{
+      width:60px;
+      border:none;
+      background:#f3f3f3;
+      padding-left:5px;
+      border-radius:4px 0 0 4px;
+    }
+
+    .nav-search input{
+      width:100%;
+      border:none;
+      padding-left:10px;
+      font-size:16px;
+    }
+
+    .search-btn{
+      width:45px;
+      background:#febd69;
+      border:none;
+      border-radius:0 4px 4px 0;
+      cursor:pointer;
+      font-size:18px;
+    }
+
+    .nav-text{
+      font-size:12px;
+    }
+
+    .nav-text span{
+      font-size:14px;
+      font-weight:bold;
+    }
+
+    .cart{
+      font-size:16px;
+      font-weight:bold;
+    }
+
+    /* PANEL */
+
+    .panel{
+      height:40px;
+      background:#232f3e;
+      color:white;
+      display:flex;
+      align-items:center;
+      gap:20px;
+      padding-left:20px;
+      font-size:14px;
+    }
+
+    /* HERO SECTION */
+
+    .hero{
+      background:url("https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=1600&auto=format&fit=crop") center/cover;
+      height:350px;
+      display:flex;
+      justify-content:center;
+      align-items:flex-end;
+    }
+
+    .hero-msg{
+      background:white;
+      padding:10px 20px;
+      margin-bottom:25px;
+      width:90%;
+      text-align:center;
+      font-size:14px;
+    }
+
+    /* PRODUCTS */
+
+    .shop-section{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+      padding:20px;
+    }
+
+    .box{
+      background:white;
+      padding:20px;
+    }
+
+    .box h2{
+      margin-bottom:15px;
+      font-size:22px;
+    }
+
+    .box img{
+      width:100%;
+      height:250px;
+      object-fit:cover;
+      margin-bottom:10px;
+    }
+
+    .box p{
+      color:#007185;
+      cursor:pointer;
+    }
+
+    /* FOOTER */
+
+    footer{
+      margin-top:20px;
+    }
+
+    .footer-top{
+      background:#37475a;
+      color:white;
+      text-align:center;
+      padding:15px;
+      cursor:pointer;
+    }
+
+    .footer-bottom{
+      background:#131921;
+      color:white;
+      text-align:center;
+      padding:20px;
+    }
+
+    @media(max-width:768px){
+
+      .navbar{
+        flex-wrap:wrap;
+        height:auto;
+        padding:10px;
+      }
+
+      .nav-search{
+        width:100%;
+        margin-top:10px;
+      }
+
+      .panel{
+        overflow:auto;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+
+  <div class="navbar">
+
+    <div class="logo">amazon</div>
+
+    <div class="nav-location">
+      Deliver to <br>
+      <strong>India</strong>
+    </div>
+
+    <div class="nav-search">
+      <select>
+        <option>All</option>
+      </select>
+
+      <input type="text" placeholder="Search Amazon">
+
+      <button class="search-btn">🔍</button>
+    </div>
+
+    <div class="nav-text">
+      Hello, Sign in <br>
+      <span>Account & Lists</span>
+    </div>
+
+    <div class="nav-text">
+      Returns <br>
+      <span>& Orders</span>
+    </div>
+
+    <div class="cart">
+      🛒 Cart
+    </div>
+
+  </div>
+
+  <!-- PANEL -->
+
+  <div class="panel">
+    <p>☰ All</p>
+    <p>Today's Deals</p>
+    <p>Customer Service</p>
+    <p>Registry</p>
+    <p>Gift Cards</p>
+    <p>Sell</p>
+  </div>
+
+  <!-- HERO SECTION -->
+
+  <div class="hero">
+    <div class="hero-msg">
+      You are on amazon.com. You can shop millions of products.
+    </div>
+  </div>
+
+  <!-- SHOP SECTION -->
+
+  <div class="shop-section">
+
+    <div class="box">
+      <h2>Gaming Accessories</h2>
+      <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1200&auto=format&fit=crop">
+      <p>See More</p>
+    </div>
+
+    <div class="box">
+      <h2>Mobiles</h2>
+      <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=1200&auto=format&fit=crop">
+      <p>Shop Now</p>
+    </div>
+
+    <div class="box">
+      <h2>Fashion</h2>
+      <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=1200&auto=format&fit=crop">
+      <p>Explore</p>
+    </div>
+
+    <div class="box">
+      <h2>Home Decor</h2>
+      <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop">
+      <p>Discover</p>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="footer-top">
+      Back to top
+    </div>
+
+    <div class="footer-bottom">
+      © 2026 Amazon Clone | HTML & CSS Only
+    </div>
+
+  </footer>
+
+</body>
+</html>
