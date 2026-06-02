@@ -1,61 +1,356 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: gilroy, sans-serif;
 }
 
-html,
-body {
-    height: 100vh;
+body{
     width: 100vw;
-}
-
-.topnav{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px black;
-    height: 60px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.logo {
-    width: 100px;
+    height: 100vh;
     display: flex;
-    flex-direction: row;
-    gap: 10px;
-    align-items: center;
-    margin-left: 20px;
-}
-.btn1{
-    width: 120px;
-    height: 45px;
-    border-radius: 20px;
-    border: none;
-    box-shadow: 0px 0px 5px black;
-    cursor: pointer;
-    background-color: #FFE51F;
-
-    font-size: 15px;
-}
-.btn2{
-    width: 120px;
-    height: 45px;
-    border: none;
-    box-shadow: 0px 0px 5px black;
-    border-radius: 20px;
-    cursor: pointer;
-    background-color: white;
-    font-size: 15px;
+    flex-direction: column;
 }
 
-.topnav p{
-    margin-right: 20px;
+#head{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 40px 0 40px;
     
 }
 
+/* Head1 styling */
+#head1{
+    width: 100%;
+    min-height: 60px;
+    /* border-bottom: 1px solid black; */
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+#head1 #head1-sec1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 500px;
+    font-size: small;
+}
+
+#Flipkart-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 200px;
+    height: 45px;
+    background-color: #FFE51F;
+    border-radius: 10px;
+    gap:5px;
+}
+#Flipkart-icon #img1{
+    width: 30px;
+}
+#Flipkart-icon #img2{
+    width: 44px;
+}
+
+#Travel-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 200px;
+    height: 45px;
+    background-color: #F0F0F0;
+    border-radius: 10px;
+    gap:10px;
+    cursor: pointer;
+}
+
+#Travel-icon #img1{
+    width: 40px;
+}
+#Travel-icon #img2{
+    width: 40px;
+}
+
+#head1 #head1-sec2{
+    display: flex;
+    gap: 7px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+#head1-sec2 svg {
+    width: 40px;
+    height: 30px;
+}
+
+
+/* head2 styling */
+#head2{
+    width: 100%;
+    height: 60px;
+    border-bottom: 2px solid black;
+    background-color: rgb(0, 153, 255);
+}
+
+#head3{
+    width: 100%;
+    height: 60px;
+    border-bottom: 2px solid black;
+    background-color: aqua;
+}
+
+/* Product card css start here */
+
+#product-card{
+    background-color: aquamarine;
+    margin: 10px 40px 0 40px;
+    min-height:400px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+    overflow-x: auto;
+    gap: 10px;
+    cursor: grab;
+
+}
+
+#product-card > div{
+    width: 650px;
+    height: 350px;
+    background-color: #FFE51F;
+    border: 2px solid black;
+    flex-shrink: 0;  
+}
+
+
+/* popular pick styling */
+
+#popular-pick {
+    background-color: rgb(220, 228, 245);
+    min-height: 300px;
+    margin: 10px 40px 0 40px;
+}
+
+
+
+
+
+    /* people also views this   */
+
+#people-view {
+    background-color: rgb(147, 83, 196);
+    min-height: 300px;
+    margin: 10px 40px 0 40px;
+}
+
+
+
+
+ /* Brand on spotlight  */
+
+#Brand-spotlight{
+    background-color: rgb(147, 83, 196);
+    min-height: 300px;
+    margin: 10px 40px 0 40px;
+}
+
+
+
+
+/* summary section styling */
+
+#summary-section {
+    background-color: #ffffff;
+    margin: 10px 40px 0 40px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+#summary-section details {
+    margin-bottom: 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#summary-section summary {
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #f8f9fa;
+    list-style: none;
+}
+
+#summary-section summary:hover {
+    background-color: #f1f3f5;
+}
+
+#summary-section details p {
+    padding: 15px;
+    line-height: 1.6;
+    background-color: white;
+}
+
+
+/* footer section styling */
+
+#footer1{
+    background-color: rgb(4, 4, 4);
+    min-height: 400px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    border-bottom: 0.5px solid white;
+}
+
+#footer1 > div{
+    width: 200px;
+    height: 300px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#footer1 > div h3 {
+    font-size: 14px;
+    color: white;
+    margin-bottom: 20px;
+}
+#footer1 > div a {
+    font-size: 11px;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+}
+
+#footer1 > div:nth-child(1){
+    width: 200px;
+    height: 300px;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap:5px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* footer 2 styling */
+#footer2{
+    background-color: rgb(3, 3, 3);
+    min-height: 50px;
+    /* margin: 10px 40px 0 40px; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#footer2 > div{
+    width: 100px;
+    height: 30px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#footer2 > div span{
+    font-size: 13px;
+    color: white;
+    font-weight: 700;
+    object-fit: contain;
+
+}
+
+#footer2 > div:nth-child(1){
+    width: 150px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+#footer2 > div:nth-child(2){
+    width: 150px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+#footer2 > div:nth-child(3){
+    width: 150px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+#footer2 > div:nth-child(4){
+    width: 150px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+
+#footer2 > div:nth-child(5){
+    width: 150px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#footer2 > div:nth-child(6){
+    width: 400px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+}
+
+#footer2 > #footer2-Box6 img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* for white space at the end of site design */
+
+#footer3 {
+    background-color: white;
+    min-height: 100px;
+    margin: 10px 40px 0 40px;
+ 
+}
 
