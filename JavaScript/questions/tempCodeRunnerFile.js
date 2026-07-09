@@ -1,7 +1,6 @@
-// function FindTotalSum(marks) {
+let sum = 0;
 
-//     marks.array.forEach(element => {
-        
-//     });
-    
-// }
+    // students.reduce(acc, cur)(student =>({
+
+    //     sum = acc + curr
+    // })) ;

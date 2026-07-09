@@ -181,26 +181,51 @@ const students = [
 // }
 
 
-function GreetUser() {
-    students.forEach(student => {
-        console.log(`
+// function GreetUser() {
+//     students.forEach(student => {
+//         console.log(`
+// To      : ${student.email}
+// Subject : Welcome to ${student.course} Course
+
+//             Hello ${student.name},
+
+//             We are happy to have you in our ${student.course} course.
+//             We hope you enjoy learning with us.
+//             If you have any questions, feel free to contact us.
+
+//             Phone : ${student.phone}
+
+// Regards,
+// Parul University
+//             `);
+//                 });
+// }
+
+
+
+// console.log(GreetUser());
+
+
+
+function WelcomeUser(i) {
+   const student = students[i];
+
+   console.log(`
 To      : ${student.email}
 Subject : Welcome to ${student.course} Course
 
-Hello ${student.name},
+            Hello ${student.name},
 
-We are happy to have you in our ${student.course} course.
-We hope you enjoy learning with us.
-If you have any questions, feel free to contact us.
+            We are happy to have you in our ${student.course} course.
+            We hope you enjoy learning with us.
+            If you have any questions, feel free to contact us.
 
-Phone : ${student.phone}
+            Phone : ${student.phone}
 
 Regards,
 Parul University
-`);
-    });
+            `);
 }
 
-GreetUser();
 
-console.log(GreetUser());
+console.log(WelcomeUser(2));
