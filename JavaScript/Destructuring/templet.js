@@ -1,28 +1,3 @@
-// To      : {aarav.sharma@example.com}
-// Subject : Welcome to {JavaScript} Course
-
-// Hello Aarav Sharma,
-
-// We are happy to have you in our {JavaScript} course.
-// We hope you enjoy learning with us.
-// If you have any questions, feel free to contact us.
-
-// Phone : {9876543210}
-
-// Regards,
-// Parul University
-
-// 4. Return the highest examscore from students Array >>>
-
-// 5 Return all the student who are in BCA Course  >>> create a function that accepts CourseName and return result
-
-/*
-Welcome to Parul University  !
-
-We hope you have a wonderful learning experience in the ${student.course} program.
-
-Best Regards,
-Parul University `; */
 
 const students = [
   {
@@ -170,62 +145,32 @@ const students = [
   },
 ];
 
-// function GreetUser() {
-//     return students.map(student => ({
-
-//         To: student.email,
-//         Subject: `Welcome to ${student.course} Course`,
-//         Phone: student.phone
-
-//     }));
-// }
 
 
-// function GreetUser() {
-//     students.forEach(student => {
-//         console.log(`
-// To      : ${student.email}
-// Subject : Welcome to ${student.course} Course
+function TempletDestructure() {
+    students.forEach(({name, course, email, phone}) => {
 
-//             Hello ${student.name},
+        console.log(`
+To      : ${email}
+Subject : Welcome to ${course} Course
 
-//             We are happy to have you in our ${student.course} course.
-//             We hope you enjoy learning with us.
-//             If you have any questions, feel free to contact us.
+            Hello ${name},
 
-//             Phone : ${student.phone}
-
-// Regards,
-// Parul University
-//             `);
-//                 });
-// }
-
-
-
-// console.log(GreetUser());
-
-
-
-function WelcomeUser(i) {
-   const student = students[i];
-
-   console.log(`
-To      : ${student.email}
-Subject : Welcome to ${student.course} Course
-
-            Hello ${student.name},
-
-            We are happy to have you in our ${student.course} course.
+            We are happy to have you in our ${course} course.
             We hope you enjoy learning with us.
             If you have any questions, feel free to contact us.
 
-            Phone : ${student.phone}
+            Phone : ${phone}
 
 Regards,
 Parul University
             `);
+                });
 }
 
+console.log(TempletDestructure(students));
 
-console.log(WelcomeUser(2));
+
+
+
+

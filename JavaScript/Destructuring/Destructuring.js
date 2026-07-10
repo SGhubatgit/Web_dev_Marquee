@@ -1,3 +1,26 @@
+// How to destructuring object
+
+const user = {
+  name: "Sunny",
+  age: 30,
+  email: "sunny@gmail.com",
+  phone: "696439562",
+};
+
+const obj = {
+  ...user,
+  age: 98,
+  username: "sunny_gautam",
+};
+
+const { name, age: userAge, email, username } = obj;
+
+console.log(name);
+console.log(userAge);
+console.log(email);
+console.log(username);
+
+// ------------------------------------------------------------------------
 
 const students = [
   {
@@ -145,13 +168,14 @@ const students = [
   },
 ];
 
-
-
-
-function BcaStudentDetails(students) {
-
-    return students.filter(student => student.course === "BCA");
-
+function BasicStudentDetails(value) {
+  let { name, email, phone, isGraduated } = value;
+  return {
+    username: name,
+    email,
+    phone,
+    isGraduated,
+  };
 }
 
-console.log(BcaStudentDetails(students));
+console.log(BasicStudentDetails(students[0]));

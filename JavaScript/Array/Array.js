@@ -1,5 +1,4 @@
 
-/* 
 const marks = [35, 55, 68, 45, 17, 54];
 
 marks.forEach(function (el, index){
@@ -383,9 +382,10 @@ console.log(newArray);
 
 console.log("\n===== END OF JAVASCRIPT ARRAY METHODS =====");
 
-*/
 
-const marks = [10, 20, 30, 20, 50];
+
+// const marks = [10, 20, 30, 20, 50];
+
 console.log(marks.filter((el) => el === 20));
 console.log(marks.sort((a, b) => a - b));
 console.log(marks.sort((a, b) => b - a));
